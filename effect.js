@@ -208,11 +208,13 @@ $('document').ready(function(){
 		$('.baner').fadeOut('fast');
 		$('#sur').fadeIn('slow');
 
+		var photo = document.getElementById('malkin');
+		photo.style.display = 'block';
+
 		document.addEventListener('DOMContentLoaded', function() {
 			var video = document.getElementById('sur');
 			video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-			var photo = document.getElementById('malkin');
-			photo.style.display = 'block';
+
 		});
 		
 	});
