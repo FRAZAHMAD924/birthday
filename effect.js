@@ -211,6 +211,8 @@ $('document').ready(function(){
 		document.addEventListener('DOMContentLoaded', function() {
 			var video = document.getElementById('sur');
 			video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+			var photo = document.getElementById('malkin');
+			photo.innerHTML = '<img src="Malkin.png" alt="Description">';
 		});
 		
 	});
